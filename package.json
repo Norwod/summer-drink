@@ -1,0 +1,48 @@
+{
+    "name": "spief",
+    "description": "SmartApps Marketplace",
+    "version": "0.0.1",
+    "private": true,
+    "dependencies": {
+        "@sberdevices/assistant-client": "2.11.5",
+        "@sberdevices/plasma-icons": "1.11.1",
+        "@sberdevices/plasma-tokens": "1.3.0",
+        "@sberdevices/plasma-ui": "1.14.1",
+        "@sberdevices/spatial-navigation": "1.0.2",
+        "next": "10.1.3",
+        "react": "16.13.1",
+        "react-dom": "16.13.1",
+        "styled-components": "5.2.1"
+    },
+    "devDependencies": {
+        "@types/node": "12.0.0",
+        "@types/react": "16.9.0",
+        "@types/react-dom": "16.9.0",
+        "@types/styled-components": "5.1.0",
+        "babel-plugin-styled-components": "1.12.0",
+        "babel-plugin-transform-remove-console": "6.9.4",
+        "eslint": "7.27.0",
+        "next-compose-plugins": "2.2.1",
+        "next-transpile-modules": "6.4.0",
+        "typescript": "3.9.5"
+    },
+    "scripts": {
+        "dev": "REACT_APP_ENVIRONMENT=development TSC_COMPILE_ON_ERROR=true next dev",
+        "build": "TSC_COMPILE_ON_ERROR=true next build && next export -o build/",
+        "start": "REACT_APP_ENVIRONMENT=development TSC_COMPILE_ON_ERROR=true next start",
+        "lint": "eslint --ext .js,.ts,.tsx .",
+        "clean": "rm -rf build && npm run cy:clean"
+    },
+    "storybook": {
+        "title": "spief",
+        "url": "https://spief-sb.dev.app.sberdevices.ru/"
+    },
+    "eslintConfig": {
+        "extends": ["react-app", "plugin:cypress/recommended"]
+    },
+    "browserslist": {
+        "production": [">0.2%", "not dead", "not op_mini all"],
+        "development": ["last 1 chrome version", "last 1 firefox version", "last 1 safari version"]
+    },
+    "contributors": ["Андрей Ложкарев", "Антон Лабунский", "Андрей Михайлев"]
+}

@@ -1,0 +1,19 @@
+{
+    "contributors": ["AALabunskiy@sberbank.ru", "adbelousova@sberbank.ru"],
+    "checks": {
+        "info": true
+    },
+    "release": {
+        "issue": {
+            "project": "FRNTNDREL",
+            "assignee": "bot-chuck@sberbank.ru",
+            "watchers": []
+        }
+    },
+    "ci": {
+        "enabled": true,
+        "jobs": {
+            "build": { "enabled": true, "lfs": true }
+        }
+    }
+}

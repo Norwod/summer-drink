@@ -1,0 +1,15 @@
+export enum Route {
+    INDEX = '/',    
+    MOHITO = '/mohito',
+    TROPICAL = '/tropical',
+    ORANGE_LEMONADE = '/orange_lemonade',
+    MINT_MILK = '/mint_milk',
+    ICEBERG = '/iceberg',
+    CHOKOMILK = '/chokomilk',
+    SLAD = '/slad',
+    CHAMP = '/champ',
+    ALE = '/ale',
+    KLEMENT = '/klement',
+    PROSTUDA = '/prostuda',
+    GOGOL = '/gogol',
+}
